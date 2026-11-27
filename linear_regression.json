@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "model_key": "OLS",
+  "model_name": "Linear Regression (OLS)",
+  "estimator_class": "LinearRegression",
+  "target": "charges",
+  "parameters": {
+    "fit_intercept": true,
+    "positive": false,
+    "tol": 1e-06
+  },
+  "feature_names": [
+    "age",
+    "bmi",
+    "children",
+    "sex_male",
+    "smoker_yes",
+    "region_northwest",
+    "region_southeast",
+    "region_southwest"
+  ],
+  "coefficients": {
+    "age": 3472.9755534303513,
+    "bmi": 1927.8282510096396,
+    "children": 636.5011852975482,
+    "sex_male": -50.749674665617995,
+    "smoker_yes": 9234.34248701025,
+    "region_northwest": -168.94443943010407,
+    "region_southeast": -371.7808097018011,
+    "region_southwest": -284.6103963464018
+  },
+  "intercept": 13030.203369289045,
+  "zero_weight_tolerance": 0.0001,
+  "preprocessor_file": "preprocessor.json",
+  "prediction_formula": "y_hat = intercept + sum((x_scaled_j * coefficient_j))"
+}
